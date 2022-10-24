@@ -1,0 +1,8 @@
+var dataAttuale = new Date();
+const mesi = ['Gennaio', 'Febbraio', 'Marzo', 'Aprile', 'Maggio', 'Giugno', 'Luglio', 'Agosto', 'Settembre', 'Ottobre', 'Novembre', 'Dicembre'];
+
+document.getElementById('oraLegale').innerHTML = dataAttuale;
+document.getElementById('giorno').innerHTML += dataAttuale.getDate();
+document.getElementById('mese').innerHTML += mesi[dataAttuale.getMonth()];
+document.getElementById('oggi').innerHTML += dataAttuale.toLocaleDateString('it-IT');
+document.getElementById('titolo').innerHTML += `${dataAttuale.getDate()}/${mesi[dataAttuale.getMonth()]}/${dataAttuale.getFullYear()}`;
